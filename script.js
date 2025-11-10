@@ -102,7 +102,7 @@ const translations = {
             }
         },
         footer: {
-            text: "© 2025 Jean Wilson Ferreira. Desenvolvido com Spring Boot ☕ e muita dedicação."
+            text: "© 2025 Jean Wilson Ferreira. Desenvolvido com amor ☕ e muita dedicação."
         }
     },
     en: {
@@ -205,7 +205,7 @@ const translations = {
             }
         },
         footer: {
-            text: "© 2025 Jean Wilson Ferreira. Built with Spring Boot ☕ and lots of dedication."
+            text: "© 2025 Jean Wilson Ferreira. Built with love ☕ and lots of dedication."
         }
     }
 };

@@ -6,22 +6,22 @@
     --primary-300: #66BFFF;
     --primary-500: #0091FF;
     --primary-700: #006EDC;
-    
+
     --neutral-950: #0A0A0A;
     --neutral-900: #141414;
     --neutral-800: #1F1F1F;
     --neutral-700: #333333;
     --neutral-300: #A1A1AA;
     --neutral-100: #E4E4E7;
-    
+
     --success: #22C55E;
     --warning: #FBBF24;
     --error: #F43F5E;
-    
+
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-code: 'JetBrains Mono', 'Courier New', monospace;
-    
+
     /* Spacing (8px grid) */
     --space-1: 8px;
     --space-2: 16px;
@@ -30,11 +30,11 @@
     --space-6: 48px;
     --space-8: 64px;
     --space-12: 96px;
-    
+
     /* Radius */
     --radius-sm: 8px;
     --radius-md: 12px;
-    
+
     /* Transitions */
     --transition-fast: 200ms ease-out;
     --transition-smooth: 250ms cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -72,14 +72,28 @@ body {
 /* ===================================
    Typography
    =================================== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
     line-height: 1.2;
 }
 
-h1 { font-size: 64px; font-weight: 700; }
-h2 { font-size: 40px; }
-h3 { font-size: 24px; }
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
 
 p {
     line-height: 1.6;
@@ -204,7 +218,7 @@ a:hover {
     font-weight: 800;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 
+    box-shadow:
         0 4px 20px rgba(0, 145, 255, 0.4),
         0 2px 4px rgba(0, 0, 0, 0.1),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -216,8 +230,15 @@ a:hover {
 }
 
 @keyframes subtleGlow {
-    0%, 100% { box-shadow: 0 4px 20px rgba(0, 145, 255, 0.4), 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2); }
-    50% { box-shadow: 0 6px 25px rgba(0, 145, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2); }
+
+    0%,
+    100% {
+        box-shadow: 0 4px 20px rgba(0, 145, 255, 0.4), 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 6px 25px rgba(0, 145, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
 }
 
 .language-toggle::before {
@@ -239,7 +260,7 @@ a:hover {
     border-color: #66BFFF;
     background: linear-gradient(135deg, var(--primary-700) 0%, #00BFFF 50%, var(--primary-500) 100%);
     transform: translateY(-4px) scale(1.08);
-    box-shadow: 
+    box-shadow:
         0 8px 30px rgba(0, 145, 255, 0.6),
         0 4px 12px rgba(0, 0, 0, 0.2),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
@@ -248,7 +269,7 @@ a:hover {
 
 .language-toggle:active {
     transform: translateY(-2px) scale(1.04);
-    box-shadow: 
+    box-shadow:
         0 4px 20px rgba(0, 145, 255, 0.5),
         0 2px 6px rgba(0, 0, 0, 0.15),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -353,15 +374,22 @@ a:hover {
 .particles {
     position: absolute;
     inset: 0;
-    background-image: 
+    background-image:
         radial-gradient(circle at 20% 50%, rgba(0, 145, 255, 0.05) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(102, 191, 255, 0.03) 0%, transparent 50%);
     animation: particlesMove 20s ease-in-out infinite;
 }
 
 @keyframes particlesMove {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .hero-content {
@@ -375,6 +403,7 @@ a:hover {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -410,7 +439,13 @@ a:hover {
 }
 
 .hero-subtitle {
-    font-size: 20px;
+    display: block;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
     color: var(--neutral-300);
     margin-bottom: var(--space-6);
     animation: fadeInUp 1s ease-out 0.6s backwards;
@@ -462,8 +497,15 @@ a:hover {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(10px); }
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
 }
 
 /* ===================================
@@ -584,12 +626,29 @@ a:hover {
     animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.skill-category:nth-child(1) { animation-delay: 0.1s; }
-.skill-category:nth-child(2) { animation-delay: 0.2s; }
-.skill-category:nth-child(3) { animation-delay: 0.3s; }
-.skill-category:nth-child(4) { animation-delay: 0.4s; }
-.skill-category:nth-child(5) { animation-delay: 0.5s; }
-.skill-category:nth-child(6) { animation-delay: 0.6s; }
+.skill-category:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.skill-category:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.skill-category:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.skill-category:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.skill-category:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.skill-category:nth-child(6) {
+    animation-delay: 0.6s;
+}
 
 .skill-category:hover {
     border-color: var(--primary-500);
@@ -754,9 +813,17 @@ a:hover {
     flex-direction: column;
 }
 
-.project-card:nth-child(1) { animation-delay: 0.1s; }
-.project-card:nth-child(2) { animation-delay: 0.2s; }
-.project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
 
 .project-card:hover {
     border-color: var(--primary-500);
@@ -861,8 +928,13 @@ a:hover {
     animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.education-card:nth-child(1) { animation-delay: 0.1s; }
-.education-card:nth-child(2) { animation-delay: 0.2s; }
+.education-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.education-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
 
 .education-card:hover {
     border-color: var(--primary-500);
@@ -1045,83 +1117,92 @@ a:hover {
    Responsive Design
    =================================== */
 @media (max-width: 768px) {
+
     /* Typography */
-    h1 { font-size: 48px; }
-    h2 { font-size: 32px; }
-    h3 { font-size: 20px; }
-    
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
     /* Spacing */
     .section {
         padding: var(--space-8) 0;
     }
-    
+
     /* Navigation */
     .nav-links {
         display: none;
     }
-    
+
     .mobile-menu-btn {
         display: block;
     }
-    
+
     .language-toggle {
         height: 40px;
         padding: 0 16px;
         font-size: 14px;
         border: 2px solid var(--primary-300);
     }
-    
+
     .language-toggle .flag {
         font-size: 18px;
     }
-    
+
     /* Hero */
     .hero-title {
         font-size: 48px;
     }
-    
+
     .hero-subtitle {
         font-size: 18px;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .hero-buttons .btn {
         width: 100%;
         justify-content: center;
     }
-    
+
     /* Stats */
     .stats {
         grid-template-columns: 1fr;
     }
-    
+
     /* Skills */
     .skills-grid {
         grid-template-columns: 1fr;
     }
-    
+
     /* Projects */
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     /* Contact */
     .contact-content {
         grid-template-columns: 1fr;
         gap: var(--space-6);
     }
-    
+
     /* Footer */
     .footer-content {
         flex-direction: column;
         gap: var(--space-2);
         text-align: center;
     }
-    
+
     /* Education */
     .education-grid {
         grid-template-columns: 1fr;
@@ -1132,14 +1213,19 @@ a:hover {
     .container {
         padding: 0 var(--space-2);
     }
-    
-    h1 { font-size: 36px; }
-    h2 { font-size: 28px; }
-    
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
     .hero-title {
         font-size: 36px;
     }
-    
+
     .social-links a {
         width: 40px;
         height: 40px;

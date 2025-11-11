@@ -23,9 +23,9 @@ const translations = {
         },
         about: {
             title: "Sobre Mim",
-            paragraph1: "Sou Analista de Sistemas com sólida experiência em desenvolvimento back-end, especializado em construir aplicações web robustas e escaláveis utilizando <span class=\"highlight\">Java</span> e <span class=\"highlight\">Spring Boot</span>.",
-            paragraph2: "Minha expertise inclui a criação de APIs RESTful, integração com sistemas de terceiros, automação de processos e otimização de desempenho. Tenho forte capacidade de gerenciar projetos do início ao fim, desde o levantamento de requisitos até a implantação, sempre focado em entregar soluções que resolvam desafios reais de negócio com eficiência.",
-            paragraph3: "Atualmente trabalho na <span class=\"highlight\">Universidade Castelo Branco</span>, onde desenvolvo e mantenho sistemas críticos, realizo customizações no ERP RM TOTVS, e crio soluções que melhoram a experiência dos usuários e a eficiência operacional da instituição.",
+            paragraph1: "Sou Analista de Sistemas com sólida experiência em desenvolvimento back-end, especializado em criar aplicações web robustas e escaláveis utilizando <span class=\"highlight\">Java (Spring Boot)</span> e <span class=\"highlight\">Python (Django)</span>.",
+            paragraph2: "Tenho ampla experiência na <span class=\"highlight\">construção de APIs RESTful</span>, <span class=\"highlight\">integração entre sistemas</span>, <span class=\"highlight\">automação de processos</span> e <span class=\"highlight\">otimização de desempenho</span>. Atuo em todas as etapas do ciclo de desenvolvimento — do levantamento de requisitos à implantação — sempre com foco em entregar soluções eficientes e alinhadas às necessidades do negócio.",
+            paragraph3: "No meu trabalho atual, venho aprimorando minhas habilidades com integrações complexas, customizações de sistemas corporativos e <span class=\"highlight\">desenvolvimento de soluções que otimizam fluxos internos</span> e <span class=\"highlight\">aprimoram a experiência do usuário</span>.",
             stats: {
                 experience: "Anos de Experiência",
                 projects: "Projetos Concluídos",
@@ -126,9 +126,9 @@ const translations = {
         },
         about: {
             title: "About Me",
-            paragraph1: "I'm a Systems Analyst with solid experience in back-end development, specialized in building robust and scalable web applications using <span class=\"highlight\">Java</span> and <span class=\"highlight\">Spring Boot</span>.",
-            paragraph2: "My expertise includes creating RESTful APIs, integrating with third-party systems, process automation, and performance optimization. I have strong capabilities in managing projects from start to finish, from requirements gathering to deployment, always focused on delivering solutions that efficiently solve real business challenges.",
-            paragraph3: "I currently work at <span class=\"highlight\">Castelo Branco University</span>, where I develop and maintain critical systems, perform customizations on RM TOTVS ERP, and create solutions that improve user experience and the institution's operational efficiency.",
+            paragraph1: "I am a Systems Analyst with solid experience in back-end development, specialized in building robust and scalable web applications using <span class=\"highlight\">Java (Spring Boot)</span> and <span class=\"highlight\">Python (Django)</span>.",
+            paragraph2: "I have extensive experience in <span class=\"highlight\">developing RESTful APIs</span>, <span class=\"highlight\">system integrations</span>, <span class=\"highlight\">process automation</span>, and <span class=\"highlight\">performance optimization</span>. I work across all stages of the development cycle — from requirements gathering to deployment — always focused on delivering efficient solutions aligned with business needs.",
+            paragraph3: "In my current role, I’ve been enhancing my skills in complex integrations, corporate system customization, and <span class=\"highlight\">developing solutions that optimize internal workflows</span> and <span class=\"highlight\">improve user experience</span>.",
             stats: {
                 experience: "Years of Experience",
                 projects: "Completed Projects",
